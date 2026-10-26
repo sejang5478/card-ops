@@ -131,7 +131,7 @@ h1, h2, h3 { letter-spacing: -0.025em; text-wrap: balance; }
 .ctrl button { font: inherit; font-size: 14px; font-weight: 600; border: 0; border-radius: 10px; padding: 8px 12px; background: var(--g100); color: var(--g700); cursor: pointer; }
 
 /* 홈: 숫자, 만든 사이트 */
-.nums { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.nums { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
 .num { background: var(--paper); border-radius: var(--r); padding: 28px; display: grid; gap: 8px; }
 .num b { font-size: clamp(22px, 2.6vw, 30px); white-space: nowrap; font-weight: 700; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
 .num span { color: var(--g700); font-size: 16px; }
@@ -262,6 +262,7 @@ h1, h2, h3 { letter-spacing: -0.025em; text-wrap: balance; }
 .flow li { background: var(--paper); border-radius: 14px; padding: 16px; display: grid; gap: 4px; font-size: 14px; color: var(--g700); }
 .flow li b { font-size: 16px; color: var(--g900); }
 .flow li .s { font-size: 12px; font-weight: 700; color: var(--blue); }
+.flow.six { grid-template-columns: repeat(6, 1fr); }
 
 .tabs { display: flex; flex-wrap: wrap; gap: 8px; }
 .tabs button { font: inherit; font-size: 15px; font-weight: 600; padding: 9px 16px; border: 0; border-radius: 999px; background: var(--paper); color: var(--g700); cursor: pointer; }
@@ -326,7 +327,7 @@ h1, h2, h3 { letter-spacing: -0.025em; text-wrap: balance; }
   .node span { font-size: 12px; text-align: center; }
   .rail { top: 22px; }
   .stage { padding: 22px; }
-  .flow { grid-template-columns: 1fr 1fr; }
+  .flow, .flow.six { grid-template-columns: 1fr 1fr; }
   .cases { grid-template-columns: 1fr 1fr; }
   .card-row { grid-template-columns: 1fr; }
   .job, .mini div { grid-template-columns: 1fr; gap: 4px; }

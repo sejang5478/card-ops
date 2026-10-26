@@ -31,7 +31,7 @@
     <div class="sec-h rv"><p class="kicker">1</p><h2 class="title sm" id="h-c1">경력사항</h2></div>
     <div class="job rv">
       <span class="when">2024.11 – 재직 중</span>
-      <div><b>네이버파이낸셜주식회사 · 결제인프라</b><span class="sub">카드 결제 운영 · 가맹점 개설과 세팅, 카드사 정책 관리, 결제 이후 운영</span></div>
+      <div><b>네이버파이낸셜주식회사 · 결제인프라</b><span class="sub">카드사 대외 협의, 카드 결제 오픈 가이드, 신규 결제수단 · 업종 오픈, 승인 · 매입 · 정산 인프라 관리</span></div>
     </div>
   </section>
 
@@ -42,8 +42,8 @@
       <a href="#p2"><span class="no">2-2 · 기획</span><b>서비스 단위 가맹점번호 체계</b><span class="k">매출을 보이게 하는 구조</span></a>
       <a href="#p3"><span class="no">2-3 · 기획 · PM</span><b>매입 VAN 다중화</b><span class="k">멈추지 않는 전환</span></a>
       <a href="#p4"><span class="no">2-4 · 운영</span><b>카드사 정책의 프로세스화</b><span class="k">기억이 아닌 절차로</span></a>
-      <a href="#p5"><span class="no">2-5 · 운영</span><b>심사 기준 가이드와 매출 분기</b><span class="k">질문을 기준으로</span></a>
-      <a href="#p6"><span class="no">2-6 · 기획</span><b>개설 프로세스 재설계와 자동화</b><span class="k">한 번 입력, 하나의 경로</span></a>
+      <a href="#p5"><span class="no">2-5 · 운영</span><b>심사 기준 가이드</b><span class="k">질문을 기준으로</span></a>
+      <a href="#p6"><span class="no">2-6 · 기획</span><b>개설 프로세스 재설계</b><span class="k">흩어진 요청을 하나의 경로로</span></a>
     </nav>
 
     <article class="pj rv" id="p1">
@@ -67,7 +67,8 @@
         <p class="sum">번호만으로는 어떤 서비스, 어느 하위몰의 매출인지 보이지 않았습니다.</p>
         <ul>
           <li>전 카드사 가맹점번호를 그룹서비스ID · 서비스ID 아래로 매핑</li>
-          <li>카드사 정책 분리, 하위몰별 매출 분리, 서비스 구분을 설계 기준으로</li>
+          <li>카드사 정책 분리, 하위몰별 매출 분리, 서비스 구분을 설계 기준으로 삼음</li>
+          <li>하위몰 가맹점 계정에 어떤 ID를 연동할지 가이드 작성</li>
           <li>회계 처리까지 이어지도록 채권전표 처리 방식을 유관부서와 함께 정함</li>
         </ul>
         <div class="res"><span>정책 · 매출 · 회계가 같은 단위로 움직이는 구조</span></div>
@@ -93,9 +94,9 @@
         <h3>흩어진 카드사 정책을<br>내부 절차로 만들었습니다</h3>
         <p class="sum">카드사마다 다르고 수시로 바뀌는 기준이 담당자의 기억에만 있었습니다.</p>
         <ul>
-          <li>인증 · 한도 · 업종 · 무이자 · 소득공제 정책을 협의 기준으로 문서화</li>
-          <li>정기 반영 업무를 주기로 정하고, 카드사 정기 점검에 회신</li>
-          <li>카드사 협의로 게임 결제 일 한도를 50만 원에서 1,000만 원으로</li>
+          <li>인증 · 한도 · 업종 · 무이자 · 소득공제 등 원천사 정책을 문서화</li>
+          <li>카드 BIN 반영, 무이자 행사 정리 등 정기 반영 업무를 주기로 정해 운영</li>
+          <li>카드사 협의로 게임 결제 일 한도를 50만 원에서 1,000만 원으로 확대</li>
         </ul>
         <div class="res"><span>정책이 사람이 아닌 절차로 남음</span></div>
       </div>
@@ -105,26 +106,24 @@
       <div class="pj-l"><span class="no">2-5</span><span class="kind">운영</span></div>
       <div class="pj-r">
         <h3>반복되던 질문을<br>모두가 쓰는 기준으로 바꿨습니다</h3>
-        <p class="sum">"이 매출은 어떤 번호로 나가야 하나요?" 심사 부서의 같은 질문이 매번 돌아왔습니다.</p>
+        <p class="sum">"이 매출은 어떤 가맹점번호로 발생해야 하나요?" 심사 부서의 같은 질문이 매번 돌아왔습니다.</p>
         <ul>
-          <li>매출 유형별로 발생해야 할 가맹점번호 기준 자료를 만들고, 판단이 갈리는 건만 직접 답변</li>
-          <li>혜택 미적용 같은 민원은 원인이 된 번호 구조를 고쳐 전용 가맹점번호로 분기</li>
+          <li>매출 유형별로 발생해야 할 가맹점번호 기준 자료 작성</li>
         </ul>
-        <div class="res"><span>심사 부서가 기준을 보고 직접 세팅</span><span>같은 원인의 민원 재발 차단</span></div>
+        <div class="res"><span>심사 부서가 기준을 보고 직접 세팅</span></div>
       </div>
     </article>
 
     <article class="pj rv" id="p6">
       <div class="pj-l"><span class="no">2-6</span><span class="kind plan">기획</span></div>
       <div class="pj-r">
-        <h3>개설 요청의 흐름을 다시 짜고,<br>반복 작업은 도구로 바꿨습니다</h3>
-        <p class="sum">메일로 흩어진 요청과 카드사마다 다른 양식이 일정을 늦췄습니다.</p>
+        <h3>흩어진 개설 요청을<br>하나의 경로로 다시 짰습니다</h3>
+        <p class="sum">요청이 메일로 흩어져 이력이 끊기고, 진행 상황을 서로 묻는 일이 반복됐습니다.</p>
         <ul>
-          <li>요청 경로를 Jira로 일원화하고 단계별 소요일과 요청 시점 기준을 정함</li>
+          <li>요청 경로를 Jira로 일원화하고 요청서 양식을 정비</li>
           <li>체크리스트 · 가이드 · 인수인계 문서로 누가 맡아도 같은 기준이 되게 함</li>
-          <li>공통 정보를 한 번 입력하면 카드사별 서류가 완성되는 도구를 동료와 공동 개발</li>
         </ul>
-        <div class="res"><span>서류 작성 건당 약 30분 → 10초 내외</span><span>팀 공용 도구로 정착</span></div>
+        <div class="res"><span>요청 부서가 같은 경로로 요청하고 진행 상황을 직접 확인</span><span>담당자가 바뀌어도 같은 기준으로 운영</span></div>
       </div>
     </article>
   </section>
@@ -143,8 +142,8 @@
     <div class="mini rv">
       <div><b>Jira · Confluence</b><span>개설 요청 관리, 가이드와 인수인계 문서</span></div>
       <div><b>SQL · Excel</b><span>거래 · 정산 데이터 확인, 정책과 매핑 기준 정리</span></div>
-      <div><b>Claude Code</b><span>업무 자동화 도구와 이 사이트 제작</span></div>
-      <div><b>Slack · Notion</b><span>외부사 협업과 도구 매뉴얼</span></div>
+      <div><b>Claude Code</b><span>흩어진 업무 이력 정리와 이 사이트 제작</span></div>
+      <div><b>Slack · Notion</b><span>외부사 협업과 업무 문서 정리</span></div>
     </div>
   </section>
 
@@ -152,7 +151,7 @@
     <div class="sec-h rv"><p class="kicker">5</p><h2 class="title sm" id="h-c5">이전 경력</h2></div>
     <div class="job rv">
       <span class="when">2022.06 – 2024.03</span>
-      <div><b>에이치에스효성더클래스 · 벤츠 죽전서비스센터</b><span class="sub">SA (Service Advisor) · 정기점검 예약 안내와 고객 응대, 지점 예약 KPI 관리</span>
+      <div><b>에이치에스효성더클래스</b><span class="sub">SA (Service Advisor) · 고객 응대와 KPI 관리</span>
         <ul><li>고객을 직접 응대하며 익힌 관점을 가맹점 문의와 민원 대응에 씁니다</li></ul>
       </div>
     </div>
