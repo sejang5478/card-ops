@@ -146,20 +146,15 @@
       <h3>전환 과정의 주요 과제</h3>
       <div class="tabs" role="tablist" data-tabs>
         <button type="button" role="tab" aria-selected="true" data-target="w1">테스트 환경</button>
-        <button type="button" role="tab" aria-selected="false" data-target="w2">전환일을 걸친 거래</button>
         <button type="button" role="tab" aria-selected="false" data-target="w3">수수료 항목</button>
       </div>
       <dl class="sca print-show" role="tabpanel" data-panel="w1" data-label="테스트 환경">
         <dt>과제</dt><dd>카드사 개발계 구간까지 통신 테스트를 할 수 없는 제약</dd>
         <dt>조치</dt><dd>카드사와 직접 협의해 개발계 구간까지 테스트할 수 있는 환경 확보</dd>
       </dl>
-      <dl class="sca print-show" role="tabpanel" data-panel="w2" data-label="전환일을 걸친 거래" hidden>
-        <dt>과제</dt><dd>매입과 취소, 차액정산과 그 취소가 서로 다른 VAN사에서 처리될 수 있음</dd>
-        <dt>조치</dt><dd>해당 경우를 모두 엣지 케이스로 만들어 알파 · 베타 · 리얼 단계로 검증</dd>
-      </dl>
       <dl class="sca print-show" role="tabpanel" data-panel="w3" data-label="수수료 항목" hidden>
         <dt>과제</dt><dd>수수료를 총합으로만 받아 거래 단위 대사가 어려웠고, 항목 추가는 모든 VAN사가 같은 날 반영해야 동작</dd>
-        <dt>조치</dt><dd>매입결과파일에 건별 기본 · 제휴 수수료 항목을 추가하고, VAN사별 반영일을 하루로 맞춰 동시 적용</dd>
+        <dt>조치</dt><dd>매입결과파일에 건별 기본 · 제휴 수수료 항목 추가를 요청하고, 모든 VAN사가 같은 날 적용하도록 동시에 협의</dd>
       </dl>
     </div>
     <div class="rv purpose">
