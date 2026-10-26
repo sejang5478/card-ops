@@ -212,7 +212,7 @@ h1, h2, h3 { letter-spacing: -0.025em; text-wrap: balance; }
 .mail code { font: inherit; }
 
 /* 포트폴리오 */
-.cases { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+.cases { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
 .cases a { text-decoration: none; background: var(--g50); border-radius: 16px; padding: 16px; display: grid; gap: 4px; font-size: 15px; font-weight: 600; transition: background .2s, transform .2s var(--ease); }
 .cases a:hover { background: var(--blue-w); transform: translateY(-3px); }
 .cases .no { font-size: 13px; color: var(--blue); font-weight: 700; }
@@ -304,7 +304,7 @@ h1, h2, h3 { letter-spacing: -0.025em; text-wrap: balance; }
   .player, .made, .pj, .picker, .demo { grid-template-columns: minmax(0, 1fr); }
   .steps { grid-template-columns: repeat(3, 1fr); }
   .card-row { grid-template-columns: 1fr 1fr; }
-  .cases { grid-template-columns: repeat(3, 1fr); }
+  .cases { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 640px) {
   body { font-size: 16px; }
